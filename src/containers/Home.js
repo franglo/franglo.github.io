@@ -1,5 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
+import Header from '../components/Header';
 
 const mapStateToProps = ({ projects }, ownProps) => {
   return {
@@ -14,7 +15,7 @@ const mapDispatchToProps = (dispatch, ownProps) => {
 
 const Home = props => (
   <div>
-    { props.projects.map(({ name }) => <li key={name}>{name}</li>) }
+    <Header />
   </div>
 );
 

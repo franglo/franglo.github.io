@@ -2,14 +2,10 @@
 
 exports[` 1`] = `
 <div>
-  <li>
-    Project #1
-  </li>
-  <li>
-    Project #2
-  </li>
-  <li>
-    Project #3
-  </li>
+  <div>
+    <header
+      className="sc-bdVaJa gkupbu"
+    />
+  </div>
 </div>
 `;
