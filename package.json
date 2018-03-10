@@ -2,7 +2,7 @@
   "name": "franglo",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://franglo.github.io",
+  "homepage": "http://franglo.io",
   "dependencies": {
     "gh-pages": "^1.1.0",
     "react": "^16.2.0",
