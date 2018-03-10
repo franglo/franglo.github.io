@@ -1,6 +1,27 @@
 import React from 'react';
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 import logo from '../logo.svg';
+
+const heartbeat = keyframes`
+  0% {
+    transform: scale( .75 );
+  }
+  20% {
+    transform: scale( 1 );
+  }
+  40% {
+    transform: scale( .75 );
+  }
+  60% {
+    transform: scale( 1 );
+  }
+  80% {
+    transform: scale( .75 );
+  }
+  100% {
+    transform: scale( .75 );
+  }
+`;
 
 const Header = styled.header`
   width: 100vw;
@@ -13,6 +34,7 @@ const Header = styled.header`
 const Logo = styled.img`
   width: 34px;
   height: 34px;
+  animation: ${heartbeat} 1s infinite;
 `;
 
 export default () => (
