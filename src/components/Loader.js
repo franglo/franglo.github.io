@@ -7,6 +7,7 @@ const light = '#50E3C2';
 const Wrapper = styled.div`
   display: inline-block;
   position: relative;
+  left: -${({ size }) => parseInt(size) / 2}px;
 `;
 
 const Triangle = styled.div`
@@ -129,7 +130,7 @@ const Triangle5 = Triangle.extend`
 `;
 
 export default props => (
-  <Wrapper>
+  <Wrapper {...props}>
     <Triangle1 {...props} />
     <Triangle2 {...props} />
     <Triangle3 {...props} />
