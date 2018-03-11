@@ -7,6 +7,7 @@ import './index.css';
 import reducers from './reducers';
 import registerServiceWorker from './registerServiceWorker';
 import Home from './containers/Home';
+import Nav from './components/Nav';
 
 let store = createStore(reducers);
 

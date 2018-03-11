@@ -4,8 +4,33 @@ exports[` 1`] = `
 <div>
   <div>
     <header
-      className="sc-bdVaJa gkupbu"
-    />
+      className="sc-gzVnrw bqVaYH"
+    >
+      <div
+        className="sc-bdVaJa deoOUC"
+      >
+        <div
+          className="sc-htpNat ioEVme"
+          size="10px"
+        />
+        <div
+          className="sc-bxivhb hJNbSn"
+          size="10px"
+        />
+        <div
+          className="sc-ifAKCX oKhmQ"
+          size="10px"
+        />
+        <div
+          className="sc-EHOje gGwvnM"
+          size="10px"
+        />
+        <div
+          className="sc-bZQynM IfPzs"
+          size="10px"
+        />
+      </div>
+    </header>
   </div>
 </div>
 `;
