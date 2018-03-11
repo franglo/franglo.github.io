@@ -23,25 +23,19 @@ const Triangle = styled.div`
 const triangle1Animation = keyframes`
   0% {
     transform: rotateY(180deg) rotateX(180deg);
-    z-index: 2;
   }
   25% {
-    transform: rotateY(180deg) rotateX(180deg);
-  }
-  31.25% {
     transform: rotateY(180deg) rotateX(90deg);
-    z-index: 2;
   }
-  31.26% {
+  25.01% {
     z-index: 4;
   }
-  37.5% {
+  50% {
+    z-index: 4;
     transform: rotateY(180deg) rotateX(0deg);
   }
-  50% {
-    transform: rotateY(0deg) rotateX(0deg);
-  }
   100% {
+    z-index: 4;
     transform: rotateY(0deg) rotateX(0deg);
   }
 `;
@@ -51,15 +45,9 @@ const triangle2Animation = keyframes`
     transform: rotateX(180deg);
   }
   25% {
-    transform: rotateX(180deg);
-  }
-  31.25% {
     transform: rotateX(90deg);
   }
-  37.5%{
-    transform: rotateX(0deg);
-  }
-  50% {
+  50%{
     transform: rotateX(0deg);
   }
   100% {
@@ -72,15 +60,9 @@ const triangle5Animation = keyframes`
     transform: rotateX(180deg);
   }
   25% {
-    transform: rotateX(180deg);
-  }
-  31.25% {
     transform: rotateX(90deg);
   }
-  37.25%{
-    transform: rotateX(0deg);
-  }
-  50% {
+  50%{
     transform: rotateX(0deg);
   }
   100% {
@@ -94,8 +76,11 @@ const Triangle1 = Triangle.extend`
   top: 0;
   left: ${({size}) => size};
   transform-origin: 0% 100%;
-  animation: ${triangle1Animation} 7s;
-  z-index: 4;
+  transform: rotateY(180deg) rotateX(180deg);
+  z-index: 2;
+  animation: ${triangle1Animation} ${({speed}) => speed};
+  animation-delay: ${({delay}) => delay};
+  animation-fill-mode: forwards;
 `;
 const Triangle2 = Triangle.extend`
   border-width: 0 0 ${({size}) => size} ${({size}) => size};
@@ -103,7 +88,10 @@ const Triangle2 = Triangle.extend`
   top: 0;
   left: 0;
   transform-origin: 0% 100%;
-  animation: ${triangle2Animation} 7s;
+  transform: rotateX(180deg);
+  animation: ${triangle2Animation} ${({speed}) => speed};
+  animation-delay: ${({delay}) => delay};
+  animation-fill-mode: forwards;
   z-index: 3;
 `;
 const Triangle3 = Triangle.extend`
@@ -125,7 +113,10 @@ const Triangle5 = Triangle.extend`
   left: 0;
   z-index: 3;
   transform-origin: 0% 0%;
-  animation: ${triangle5Animation} 7s;
+  transform: rotateX(180deg);
+  animation: ${triangle5Animation} ${({speed}) => speed};
+  animation-delay: ${({delay}) => delay};
+  animation-fill-mode: forwards;
 `;
 
 export default props => (
