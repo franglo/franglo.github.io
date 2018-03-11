@@ -60,7 +60,7 @@ export default () => (
   <div>
     <Header>
       <LoaderIntro>
-        <Loader size="40px" speed="2s" delay="0.3s" />
+        <Loader size="40px" speed="1s" delay="0.3s" />
       </LoaderIntro>
       <div>
         <Slogan>Unfold <Highlight>ideas</Highlight></Slogan>
