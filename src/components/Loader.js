@@ -27,7 +27,10 @@ const triangle1Animation = keyframes`
   25% {
     transform: rotateY(180deg) rotateX(90deg);
   }
-  25.01% {
+  26% {
+    z-index: 2;
+  }
+  27% {
     z-index: 4;
   }
   50% {
