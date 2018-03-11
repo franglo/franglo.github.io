@@ -7,7 +7,9 @@ const light = '#50E3C2';
 const Wrapper = styled.div`
   display: inline-block;
   position: relative;
-  left: -${({ size }) => parseInt(size) / 2}px;
+  left: ${({ size }) => parseInt(size, 10) / 2}px;
+  height: ${({ size }) => parseInt(size, 10) * 3}px;
+  width: ${({ size }) => parseInt(size, 10) * 2}px;
 `;
 
 const Triangle = styled.div`
@@ -89,44 +91,41 @@ const triangle5Animation = keyframes`
 const Triangle1 = Triangle.extend`
   border-width: ${({size}) => size} 0 0 ${({size}) => size};
   border-color: transparent transparent transparent ${dark};
-  top: -${({size}) => size};
+  top: 0;
   left: ${({size}) => size};
   transform-origin: 0% 100%;
-  animation: ${triangle1Animation} 7s infinite;
-  animation-direction: alternate;
+  animation: ${triangle1Animation} 7s;
   z-index: 4;
 `;
 const Triangle2 = Triangle.extend`
   border-width: 0 0 ${({size}) => size} ${({size}) => size};
   border-color: transparent transparent${light} transparent;
-  top: -${({size}) => size};
+  top: 0;
   left: 0;
   transform-origin: 0% 100%;
-  animation: ${triangle2Animation} 7s infinite;
-  animation-direction: alternate;
+  animation: ${triangle2Animation} 7s;
   z-index: 3;
 `;
 const Triangle3 = Triangle.extend`
   border-width: ${({size}) => size} ${({size}) => size} 0 0;
   border-color: ${dark} transparent transparent transparent;
-  top: 0;
+  top: ${({ size }) => size};
   left: 0;
 `;
 const Triangle4 = Triangle.extend`
   border-width: 0 0 ${({size}) => size} ${({size}) => size};
   border-color: transparent transparent ${light} transparent;
-  top: 0;
+  top: ${({ size }) => size};
   left: 0;
 `;
 const Triangle5 = Triangle.extend`
   border-width: ${({size}) => size} ${({size}) => size} 0 0;
   border-color: ${dark} transparent transparent transparent;
-  top: ${({size}) => size};
+  top: ${({ size }) => parseInt(size, 10) * 2}px;
   left: 0;
   z-index: 3;
   transform-origin: 0% 0%;
-  animation: ${triangle5Animation} 7s infinite;
-  animation-direction: alternate;
+  animation: ${triangle5Animation} 7s;
 `;
 
 export default props => (
