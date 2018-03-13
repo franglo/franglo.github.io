@@ -1,6 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import Header from '../components/Header';
+import Splash from '../components/Splash';
 
 const mapStateToProps = ({ projects }, ownProps) => {
   return {
@@ -15,7 +15,7 @@ const mapDispatchToProps = (dispatch, ownProps) => {
 
 const Home = props => (
   <div>
-    <Header />
+    <Splash />
   </div>
 );
 

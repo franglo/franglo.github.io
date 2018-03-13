@@ -2,35 +2,56 @@
 
 exports[` 1`] = `
 <div>
-  <div>
-    <header
-      className="sc-gzVnrw bqVaYH"
+  <header
+    className="sc-gzVnrw bqVaYH"
+  >
+    <div
+      className="sc-iwsKbI kyHgzo"
     >
       <div
-        className="sc-bdVaJa deoOUC"
+        className="sc-bdVaJa gIiqmQ"
+        size="40px"
+        speed="1s"
       >
         <div
-          className="sc-htpNat ioEVme"
-          size="10px"
+          className="sc-htpNat clgwjH"
+          size="40px"
+          speed="1s"
         />
         <div
-          className="sc-bxivhb hJNbSn"
-          size="10px"
+          className="sc-bxivhb eQpKdK"
+          size="40px"
+          speed="1s"
         />
         <div
-          className="sc-ifAKCX oKhmQ"
-          size="10px"
+          className="sc-ifAKCX iANHpo"
+          size="40px"
+          speed="1s"
         />
         <div
-          className="sc-EHOje gGwvnM"
-          size="10px"
+          className="sc-EHOje jdOGVq"
+          size="40px"
+          speed="1s"
         />
         <div
-          className="sc-bZQynM IfPzs"
-          size="10px"
+          className="sc-bZQynM cdUyyU"
+          size="40px"
+          speed="1s"
         />
       </div>
-    </header>
-  </div>
+    </div>
+    <div>
+      <span
+        className="sc-htoDjs cWVcuN"
+      >
+        Unfold 
+        <strong
+          className="sc-dnqmqq jncSXX"
+        >
+          ideas
+        </strong>
+      </span>
+    </div>
+  </header>
 </div>
 `;

@@ -2,8 +2,6 @@ import React from 'react';
 import styled, { keyframes } from 'styled-components';
 import Loader from './Loader';
 
-const dark = '';
-
 const sloganAnimation = keyframes`
   0% {
     opacity: 0;
@@ -57,14 +55,12 @@ const LoaderIntro = styled.div`
 `;
 
 export default () => (
-  <div>
-    <Header>
-      <LoaderIntro>
-        <Loader size="40px" speed="1s" delay="0.3s" />
-      </LoaderIntro>
-      <div>
-        <Slogan>Unfold <Highlight>ideas</Highlight></Slogan>
-      </div>
-    </Header>
-  </div>
+  <Header>
+    <LoaderIntro>
+      <Loader size="40px" speed="1s" delay="0.3s" />
+    </LoaderIntro>
+    <div>
+      <Slogan>Unfold <Highlight>ideas</Highlight></Slogan>
+    </div>
+  </Header>
 );
