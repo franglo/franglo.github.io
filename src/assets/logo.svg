@@ -1,17 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="100px" height="150px" viewBox="0 0 100 150" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 49 (51002) - http://www.bohemiancoding.com/sketch -->
-    <title>Group 2</title>
+<svg width="20px" height="68px" viewBox="0 0 20 68" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 59.1 (86144) - https://sketch.com -->
+    <title>Group</title>
     <desc>Created with Sketch.</desc>
-    <defs></defs>
-    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Mobile" transform="translate(-144.000000, -180.000000)">
-            <g id="Group-2" transform="translate(144.000000, 180.000000)">
-                <polygon id="Rectangle" fill="#3AD5B2" points="0 100 50 100 0 150"></polygon>
-                <polygon id="Rectangle" fill="#50E3C2" transform="translate(25.000000, 75.000000) rotate(-180.000000) translate(-25.000000, -75.000000) " points="0 50 50 50 0 100"></polygon>
-                <polygon id="Rectangle" fill="#3AD5B2" points="0 50 50 50 0 100"></polygon>
-                <polygon id="Rectangle" fill="#50E3C2" transform="translate(25.000000, 25.000000) rotate(-180.000000) translate(-25.000000, -25.000000) " points="0 0 50 0 0 50"></polygon>
-                <polygon id="Rectangle" fill="#3AD5B2" transform="translate(75.000000, 25.000000) rotate(-90.000000) translate(-75.000000, -25.000000) " points="50 0 100 0 50 50"></polygon>
+    <g id="Website" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Mobile" transform="translate(-148.000000, -51.000000)">
+            <g id="Group" transform="translate(148.000000, 51.000000)">
+                <g id="logo" opacity="0.195963542" fill="#000000">
+                    <polygon id="Top" points="0 16.1333333 16 0 16 4.4 2.90909091 17.6 2.90909091 51.3333333 0 54.2666667"></polygon>
+                    <polygon id="Bottom" points="5.81818182 36.6660349 13.0909091 29.3333333 13.0909091 33.7326384 8.72727273 38.1327332 8.72727273 63.0666035 5.81818182 66"></polygon>
+                </g>
+                <g id="logo" transform="translate(4.000000, 2.000000)">
+                    <polygon id="Top" fill="#E24D4D" points="0 16.1333333 16 0 16 4.4 2.90909091 17.6 2.90909091 51.3333333 0 54.2666667"></polygon>
+                    <polygon id="Bottom" fill="#FFFFFF" points="5.81818182 36.6660349 13.0909091 29.3333333 13.0909091 33.7326384 8.72727273 38.1327332 8.72727273 63.0666035 5.81818182 66"></polygon>
+                </g>
             </g>
         </g>
     </g>

@@ -1,8 +1,9 @@
-import React from 'react';
-import styled, { keyframes } from 'styled-components';
-import Loader from './Loader';
+import React from "react";
+import styled, { keyframes } from "styled-components";
+import Loader from "./Loader";
+import logo from "../assets/logo.svg";
 
-const sloganAnimation = keyframes`
+const nameAnimation = keyframes`
   0% {
     opacity: 0;
     transform: translateY(50px);
@@ -13,54 +14,57 @@ const sloganAnimation = keyframes`
   }
 `;
 
-const logoAnimation = keyframes`
-  0% {
-    transform: scale(0, 0);
-  }
-  50% {
-    transform: scale(1.2, 1.2);
-  }
-  100% {
-    transform: scale(1, 1);
-  }
-`;
-
 const Header = styled.header`
   width: 100vw;
   height: 100vh;
   text-align: center;
   display: table-cell;
   vertical-align: middle;
+  background-color: #18202f;
 `;
 
-const Slogan = styled.span`
-  font-size: 30px;
-  line-height: 100px;
-  font-weight: 100;
+const Name = styled.h1`
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 400;
   display: inline-block;
   opacity: 0;
   transform: translateY(50px);
-  animation: ${sloganAnimation} 700ms ease-out;
+  animation: ${nameAnimation} 700ms ease-out;
   animation-delay: 0.5s;
   animation-fill-mode: forwards;
+  color: #e24d4d;
+  text-transform: uppercase;
+  font-weight: 600;
+  padding: 0;
 `;
 
 const Highlight = styled.strong`
   font-weight: 400;
-  color: #3AD5B2;
+  color: #3ad5b2;
 `;
 
-const LoaderIntro = styled.div`
-  animation: ${logoAnimation} 0.5s ease-out;
+const Logo = styled.img`
+  height: 68px;
+`;
+
+const Slogan = styled.h2`
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 0;
+  animation: ${nameAnimation} 700ms ease-out;
+  animation-fill-mode: forwards;
+  opacity: 0;
+  animation-delay: 1s;
 `;
 
 export default () => (
   <Header>
-    <LoaderIntro>
-      <Loader size="40px" speed="1s" delay="0.3s" />
-    </LoaderIntro>
+    <Logo alt="logo" src={logo} />
     <div>
-      <Slogan>Unfold <Highlight>ideas</Highlight></Slogan>
+      <Name>Franglo</Name>
+      <Slogan>Grow ideas into products</Slogan>
     </div>
   </Header>
 );
